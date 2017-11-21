@@ -135,7 +135,7 @@ body.paused:before {
 	margin-left: -300px;
     width: 600px;
     height: 300px;
-    background: url(http://glmedia.doublespeakgames.com/img/title.png) top left no-repeat;
+    background: url(https://github.com/Jmanugget/grid/img/title.png) top left no-repeat;
     transition: opacity 700ms linear;
     -webkit-transition: opacity 700ms linear;
     -moz-transition: opacity 700ms linear;
@@ -377,7 +377,7 @@ body.paused:before {
 	width: 28px;
 	height: 28px;
 	display: inline-block;
-	background-image: url(http://glmedia.doublespeakgames.com/img/icons.png);
+	background-image: url(https://github.com/Jmanugget/grid/img/icons.png);
 	margin-left: 5px;
 	cursor: pointer;
 }

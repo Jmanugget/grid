@@ -11,11 +11,11 @@ requirejs.config({
 	paths: {
 		app: "../app",
 		"jquery": [
-			"http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
+			"https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
 			"jquery-2.0.3.min"
 		],
 		"google-analytics": [
-	        "http://www.google-analytics.com/analytics",
+	        "https://www.google-analytics.com/analytics",
 	        "analytics"
         ]
 	},

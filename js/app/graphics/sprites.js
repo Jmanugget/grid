@@ -1,6 +1,6 @@
 define(function() {
 
-	var CDN_PATH = "https://github.com/Jmanugget/grid/";
+	var CDN_PATH = "https://github.com/Jmanugget/grid/tree/master/";
 	var spriteinfo = {
 		// Buildings
 		blacksmith: ['buildings', 0],

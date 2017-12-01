@@ -9,7 +9,7 @@ define(['app/eventmanager', 'app/audio/webaudioprovider', 'app/audio/htmlaudiopr
 	var playingMusic = false;
 	var longloadTimer = false;
 	var playingBossMusic = false;
-	var CDN_PATH = "https://github.com/Jmanugget/grid/tree/master/";
+	var CDN_PATH = "https://jmanugget.github.io/grid/";
 	
 	var sounds = {
 		DayMusic: {

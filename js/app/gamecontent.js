@@ -12,9 +12,9 @@ define({
 				'default': 'spawn:zombie'
 			},
 			multipliers: {
-				house: 2,
-				fort: 3,
-				castle: 4
+				house: 3,
+				fort: 5,
+				castle: 6
 			},
 			effectDest: {
 				day: [-20, 10],
@@ -29,13 +29,13 @@ define({
 			},
 			multipliers: {
 				sawmill: 1,
-				sawmill2: 1,
-				sawmill3: 2,
-				sawmill4: 2,
-				sawmill5: 2,
-				sawmill6: 3,
-				sawmill7: 3,
-				sawmill8: 3
+				sawmill2: 2,
+				sawmill3: 3,
+				sawmill4: 4,
+				sawmill5: 5,
+				sawmill6: 6,
+				sawmill7: 7,
+				sawmill8: 8
 			},
 			effectDest: {
 				day: [32, -20],
@@ -50,13 +50,13 @@ define({
 			},
 			multipliers: {
 				blacksmith: 1,
-				blacksmith2: 1,
-				blacksmith3: 2,
-				blacksmith4: 2,
-				blacksmith5: 2,
-				blacksmith6: 3,
-				blacksmith7: 3,
-				blacksmith8: 3
+				blacksmith2: 2,
+				blacksmith3: 3,
+				blacksmith4: 4,
+				blacksmith5: 5,
+				blacksmith6: 6,
+				blacksmith7: 7,
+				blacksmith8: 8
 			},
 			effectDest: {
 				day: [32, -20],
@@ -127,17 +127,17 @@ define({
 		
 		'house': function() {
 			var e = require('app/eventmanager');
-			e.trigger('resourceStoreChanged', [4, 3]);
+			e.trigger('resourceStoreChanged', [4, 4]);
 		},
 		
 		'fort': function() {
 			var e = require('app/eventmanager');
-			e.trigger('resourceStoreChanged', [4, 4]);
+			e.trigger('resourceStoreChanged', [5, 5]);
 		},
 		
 		'castle': function() {
 			var e = require('app/eventmanager');
-			e.trigger('resourceStoreChanged', [5, 4]);
+			e.trigger('resourceStoreChanged', [5, 6]);
 		},
 		
 		'tower': function() {
@@ -163,7 +163,7 @@ define({
 			spriteName: 'shack',
 			position: 30,
 			cost: {},
-			requiredLevel: 4,
+			requiredLevel: 2,
 			prestigeDependency: 'blacksmith',
 			animationFrames: 1,
 			tileMod: 'grain',
@@ -179,8 +179,8 @@ define({
 			spriteName: 'shack',
 			position: 30,
 			cost: {},
-			requiredLevel: 7,
-			prestigeDependency: 'blacksmith3',
+			requiredLevel: 3,
+			prestigeDependency: 'blacksmith',
 			animationFrames: 1,
 			tileMod: 'grain',
 			tileLevel: 3,
@@ -195,8 +195,8 @@ define({
 			spriteName: 'shack',
 			position: 30,
 			cost: {},
-			requiredLevel: 10,
-			prestigeDependency: 'blacksmith6',
+			requiredLevel: 4,
+			prestigeDependency: 'blacksmith',
 			animationFrames: 1,
 			tileMod: 'grain',
 			tileLevel: 4,
@@ -211,8 +211,8 @@ define({
 			spriteName: 'bricklayer',
 			position: 90,
 			cost: {
-				stone: 5,
-				wood: 5
+				stone: 3,
+				wood: 3
 			},
 			requiredLevel: 1,
 			priority: 1
@@ -223,9 +223,9 @@ define({
 			spriteName: 'bricklayer',
 			position: 90,
 			cost: {
-				stone: 3,
-				wood: 3,
-				cloth: 3
+				stone: 2,
+				wood: 2,
+				cloth: 2
 			},
 			requiredLevel: 1,
 			tileMod: 'clay',
@@ -240,9 +240,9 @@ define({
 			spriteName: 'bricklayer',
 			position: 90,
 			cost: {
-				stone: 5,
-				wood: 5,
-				cloth: 5
+				stone: 2,
+				wood: 2,
+				cloth: 2
 			},
 			requiredLevel: 1,
 			tileMod: 'clay',
@@ -257,9 +257,9 @@ define({
 			spriteName: 'bricklayer',
 			position: 90,
 			cost: {
-				stone: 8,
-				wood: 8,
-				cloth: 8
+				stone: 4,
+				wood: 4,
+				cloth: 4
 			},
 			requiredLevel: 1,
 			tileMod: 'clay',
@@ -352,8 +352,8 @@ define({
 			position: 210,
 			cost: {
 				wood: 2,
-				clay: 5,
-				cloth: 5
+				clay: 2,
+				cloth: 2
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -368,9 +368,9 @@ define({
 			spriteName: 'blacksmith',
 			position: 210,
 			cost: {
-				wood: 2,
-				clay: 8,
-				cloth: 8
+				wood: 3,
+				clay: 4,
+				cloth: 4
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -386,8 +386,8 @@ define({
 			position: 210,
 			cost: {
 				wood: 4,
-				clay: 8,
-				cloth: 8
+				clay: 5,
+				cloth: 5
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -403,8 +403,8 @@ define({
 			position: 210,
 			cost: {
 				wood: 6,
-				clay: 8,
-				cloth: 8
+				clay: 6,
+				cloth: 6
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -420,8 +420,8 @@ define({
 			position: 210,
 			cost: {
 				wood: 6,
-				clay: 10,
-				cloth: 10
+				clay: 9,
+				cloth: 9
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -437,8 +437,8 @@ define({
 			position: 210,
 			cost: {
 				wood: 8,
-				clay: 10,
-				cloth: 10
+				clay: 8,
+				cloth: 8
 			},
 			requiredLevel: 1,
 			tileMod: 'stone',
@@ -485,8 +485,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 2,
-				clay: 5,
-				cloth: 5
+				clay: 2,
+				cloth: 2
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -502,8 +502,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 2,
-				clay: 8,
-				cloth: 8
+				clay: 3,
+				cloth: 3
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -519,8 +519,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 4,
-				clay: 8,
-				cloth: 8
+				clay: 4,
+				cloth: 4
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -536,8 +536,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 6,
-				clay: 8,
-				cloth: 8
+				clay: 5,
+				cloth: 5
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -553,8 +553,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 6,
-				clay: 10,
-				cloth: 10
+				clay: 6,
+				cloth: 6
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -570,8 +570,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 8,
-				clay: 10,
-				cloth: 10
+				clay: 7,
+				cloth: 7
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -587,8 +587,8 @@ define({
 			position: 270,
 			cost: {
 				stone: 10,
-				clay: 10,
-				cloth: 10
+				clay: 8,
+				cloth: 8
 			},
 			requiredLevel: 1,
 			tileMod: 'wood',
@@ -657,15 +657,15 @@ define({
 	StateEffects: {
 		freezeTime: {
 			className: 'freezeTime',
-			duration: 15000
+			duration: 1500000
 		},
 		haste: {
 			className: 'haste',
-			duration: 30000
+			duration: 3000000
 		},
 		frozen: {
 			className: 'frozen',
-			duration: 8000,
+			duration: 800000,
 			start: function(entity) {
 				entity.paused = true;
 				if(this._worldEffect == null) {

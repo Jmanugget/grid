@@ -35,7 +35,7 @@ define(['jquery', 'app/eventmanager', 'app/analytics', 'app/graphics/graphics', 
 	var World = {
 			
 		options: {
-			dayMoves: 20,
+			dayMoves: 30,
 			nightMoves: 15
 		},
 		init: function(opts) {
